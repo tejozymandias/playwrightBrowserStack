@@ -17,7 +17,7 @@ const config = {
   testDir: './tests',
   testMatch: '**/*.js', 
   
-  globalSetup: require.resolve('./global-setup'),
+  // globalSetup: require.resolve('./global-setup'),
   globalTeardown: require.resolve('./global-teardown'),
 
   /* Maximum time one test can run for. */
@@ -59,18 +59,18 @@ const config = {
       },
     }
     ,
-    {
-      name: 'playwright-webkit@latest:OSX Ventura',
-      use: {
-        connectOptions: { wsEndpoint: getCdpEndpoint('playwright-webkit@latest:OSX Ventura', 'test2') }
-      },
-    },
-    {
-      name: 'playwright-firefox:Windows 11',
-      use: {
-        connectOptions: { wsEndpoint: getCdpEndpoint('playwright-firefox:Windows 11', 'test3') }
-      },
-    }
+    // {
+    //   name: 'playwright-webkit@latest:OSX Ventura',
+    //   use: {
+    //     connectOptions: { wsEndpoint: getCdpEndpoint('playwright-webkit@latest:OSX Ventura', 'test2') }
+    //   },
+    // },
+    // {
+    //   name: 'playwright-firefox:Windows 11',
+    //   use: {
+    //     connectOptions: { wsEndpoint: getCdpEndpoint('playwright-firefox:Windows 11', 'test3') }
+    //   },
+    // }
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */

@@ -9,7 +9,10 @@ try{
   await page.waitForTimeout(5000);
 
   await page.goto('https://www.bstackdemo.com/',{ waitUntil: 'networkidle' });
-  await page.locator('[id="\\32 "]').getByText('Add to cart').click();
+  await page.locator('[id="\\32 "]').getByText('Add to carts').click();
+  // await expect(page.locator('[id="\\32 "]')).toHaveText('Add to carts');
+
+
   await page.getByText('Checkout').click();
   await page.locator('#username svg').click();
   await page.locator('#react-select-2-option-0-0').click();
@@ -29,11 +32,11 @@ try{
   await page.getByRole('button', { name: 'Submit' }).click();
   await page.getByRole('button', { name: 'Continue Shopping »' }).click();
 
-  await page.evaluate(_ => {}, `browserstack_executor: ${JSON.stringify({action: 'setSessionStatus',arguments: {status: 'passed',reason: 'Product added to cart'}})}`);
+  await page.evaluate(_ => {}, `browserstack_executor: ${JSON.stringify({action: 'setSessionStatus',arguments: {status: 'passed',reason: 'Title Matches'}})}`);
 
 } catch (e) {
   console.log(e);
-  await page.evaluate(_ => {}, `browserstack_executor: ${JSON.stringify({action: 'setSessionStatus',arguments: {status: 'failed',reason: 'Test failed'}})}`);
+  await page.evaluate(_ => {}, `browserstack_executor: ${JSON.stringify({action: 'setSessionStatus',arguments: {status: 'failed',reason: 'Title does not match'}})}`);
 
 }  
 

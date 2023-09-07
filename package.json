@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sample-local-test":"npx playwright test tests/local_test.js",
-    "sample-test":"npx playwright test tests/sample_test.js"
+    "sample-test": "npx playwright test tests/sample_test.js --trace on",
+    "basic-test": "npx playwright test tests/title-check.js --trace on"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.29.1",
-    "browserstack-local": "^1.5.1"
+    "@playwright/test": "1.35.0",
+    "browserstack-local": "^1.5.4",
+    "playwright":"1.35.0"
   }
 }
