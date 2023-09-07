@@ -7,9 +7,9 @@
 * Clone the repo and run `cd node-js-playwright-browserstack`
 * Set `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` as environment variables.
 
-# Set these values in your ~/.zprofile (zsh) or ~/.profile (bash)
-  export BROWSERSTACK_USERNAME="YourBrowserStackUsername"
-  export BROWSERSTACK_ACCESS_KEY="YourBrowserStackAccessKey"
+#### Set these values in your ~/.zprofile (zsh) or ~/.profile (bash)
+ * export BROWSERSTACK_USERNAME="YourBrowserStackUsername"
+ * export BROWSERSTACK_ACCESS_KEY="YourBrowserStackAccessKey"
 
 * Run `npm i`
 
