@@ -4,7 +4,7 @@
 
 ## Setup
 
-* Clone the repo and run `cd node-js-playwright-browserstack`
+* Clone the repo and run `cd playwrightBrowserstack`
 * Set `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` as environment variables.
 
 #### Set these values in your ~/.zprofile (zsh) or ~/.profile (bash)
