@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sample-test": "npx playwright test tests/sample_test.js --trace on",
-    "basic-test": "npx playwright test tests/title-check.js --trace on"
+    "basic-test": "npx playwright test tests/basic-test.js --trace on"
   },
   "keywords": [],
   "author": "",

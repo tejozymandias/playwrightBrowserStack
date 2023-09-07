@@ -16,8 +16,8 @@ const caps = {
   os_version: 'catalina',
   name: 'My first playwright test',
   build: 'playwright-build',
-  'browserstack.username': 'BROWSERSTACK_USERNAME',
-  'browserstack.accessKey': 'BROWSERSTACK_ACCESS_KEY',
+  'browserstack.username': 'username',
+  'browserstack.accessKey': 'accessKey',
   'browserstack.local':  false, 
   // 'client.playwrightVersion': clientPlaywrightVersion,
   'browserstack.playwrightVersion': '1.35.0'
@@ -27,7 +27,7 @@ exports.bsLocal = new BrowserStackLocal.Local();
 
 // replace YOUR_ACCESS_KEY with your key. You can also set an environment variable - "BROWSERSTACK_ACCESS_KEY".
 exports.BS_LOCAL_ARGS = {
-  key:  'BROWSERSTACK_ACCESS_KEY',
+  key:  'accessKey',
 };
 
 // Patching the capabilities dynamically according to the project name.
